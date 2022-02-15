@@ -170,7 +170,7 @@ var startGame = function(enemy) {
 // function to end the entire game
 var endGame = function() {
   window.alert("The game has now ended. Let's see how you did!");
-
+ 
   // check localStorage for high score, if it's not there, use 0
   var highScore = localStorage.getItem("highscore");
   if (highScore === null) {
