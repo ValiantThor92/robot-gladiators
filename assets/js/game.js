@@ -187,14 +187,13 @@ var shop = function() {
   console.log("entered the shop");
   // ask player what theyd like to do
   var shopOptionPrompt = window.prompt(
-    "Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one: 'REFILL', 'UPGRADE', or 'LEAVE' to make a choice."
+    "Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one 1 for REFILL, 2 for UPGRADE, or 3 for LEAVE."
   );
 
   // convert answer from prompt to an actual number
   shopOptionPrompt = parseInt(shopOptionPrompt);
 
   // use switch to carry out action
-  debugger;
   switch (shopOptionPrompt) {
     case 1:
       playerInfo.refillHealth();
@@ -207,7 +206,6 @@ var shop = function() {
       break;
     default:
       window.alert("You did not pick a valid option. Try again.");
-      // call shop() again to force player to pick a valid option
       shop();
       break;
   }
